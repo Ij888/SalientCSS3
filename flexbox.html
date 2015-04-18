@@ -5,18 +5,26 @@
             .box-parent{
                 display: box; 
                 display: -moz-box; 
-                display: -webkit-box;}
+                display: -webkit-box;
+                -webkit-box-orient: block-axis;
+            }
+            
+            img{width: 100%;}
+            .bbottom{border-bottom: 2px solid red;}
         </style>
     </head>
     <body>
         <div class="box-parent">
-            <div>Child1</div>
-            <p>Child2</p>
+            <div class="bbottom">Child1</div>
+            <p class="bbottom">Child2</p>
             <table><tr><td>Child3</td></tr></table>
             <figure><img src="child.jpg"></figure>
             <code>
             A long time coming.
             </code>
         </div>
+        <footer>
+        
+        </footer>
     </body>
 </html>
